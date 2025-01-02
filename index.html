@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="index.js" defer></script>
+        <title>Basketball Scoreboard</title>
+    </head>
+    <body>
+        <!-- Main section -->
+        <main class="main">
+            
+            <!-- HOMETOWN section -->
+            <section id="hometown">
+                
+                <!-- Scoreboard -->
+                <div class="hometown-board">
+                    <h2>HOME</h2>
+                    <p class="hometown-score numtext defaultBox">00</p>
+                </div>
+                
+                <!-- Bonus score -->
+                <p class="hometown-bonus bonusBox">Bonus <span class="numtext"></span></p>
+                
+                <!-- Fouls -->
+                <div class="hometown-fouls foulsBox">
+                    <p>FOULS</p>
+                    <div class="hometown-fouls-count numtext">0</div>
+                    <button class="btn btn-ht-fouls numtext">+1</button>
+                </div>
+                
+                <!-- Score increment 1 2 3 -->
+                <div class="hometown-scoreAdd">
+                    <button class="btn btn-htAdd1 numtext">+1</button>
+                    <button class="btn btn-htAdd2 numtext">+2</button>
+                    <button class="btn btn-htAdd3 numtext">+3</button>
+                </div>
+                
+            </section>
+            
+            <!-- Center Section (TIME, QTR, NEWGAME) -->
+            <section id="center">
+                
+                <!-- Time -->
+                <div class="time">
+                    <h2>Time</h2>
+                    <!-- Time Box -->
+                    <div class="time-box defaultBox">
+                        <span id="min" class="numtext">00</span>:<span id="sec" class="numtext">00</span>
+                    </div>
+                </div>
+                
+                <!-- QTR -->
+                <div class="qtr">
+                    <h2>QTR</h2>
+                    <!-- Time Box -->
+                    <div class="qtr-box numtext defaultBox">
+                        0
+                    </div>
+                </div>
+                
+                <!-- Control button -->
+                <div class="control-box">
+                    <!-- Start button -->
+                    <button class="btn-start">START</button>
+                    <!-- Newgame button -->
+                    <button class="btn-new">NEWGAME</button>
+                    <!-- Stopbutton -->
+                    <button class="btn-pause">PAUSE</button>
+                </div>
+                
+            </section>
+            
+            <!-- AWAY section -->
+            <section id="away">
+                <!-- Scoreboard -->
+                <div class="away-board">
+                    <h2>AWAY</h2>
+                    <p class="away-score numtext defaultBox">00</p>
+                </div>
+                
+                <!-- Bonus score -->
+                <p class="away-bonus bonusBox">Bonus <span class="numtext"></span></p>
+                
+                <!-- Fouls -->
+                <div class="away-fouls foulsBox">
+                    <p>FOULS</p>
+                    <div class="away-fouls-count numtext">0</div>
+                    <button class="btn btn-away-fouls numtext">+1</button>
+                </div>
+                
+                <!-- Score increment 1 2 3 -->
+                <div class="away-scoreAdd">
+                    <button class="btn btn-awayAdd1 numtext">+1</button>
+                    <button class="btn btn-awayAdd2 numtext">+2</button>
+                    <button class="btn btn-awayAdd3 numtext">+3</button>
+                </div>
+            </section>
+        </main>
+        
+    </body>
+</html>

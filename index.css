@@ -1,0 +1,130 @@
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background: #111827;
+    color: #F9FAFB;
+    display: flex;
+    align-items: flex-start;
+    padding-inline: 2rem;
+    padding-block: 4rem;
+}
+
+.numtext {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.defaultBox {
+    font-size: 5rem;
+    text-align: center;
+    background: black;
+    margin-block: 1rem;
+    padding: 1rem;
+    color: #F94F6D;
+}
+
+/* MAIN Section */
+.main {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-inline: auto;
+    border: 1px solid #9CA3AF;
+    padding: 1.5rem 2rem;
+    overflow-x: auto;
+}
+
+/* Hometown & Away section */
+#hometown, #away {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Bonus box */
+.bonusBox {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bonusBox > span {
+    display: inline-block;
+    border: 2px solid #34D399;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: #34D399;
+}
+
+/* Fouls box */
+.foulsBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.foulsBox > div {
+    background-color: black;
+    padding: 0.5rem 1rem;
+    color: #F94F6D;
+    font-size: 2rem;
+}
+
+.btn {
+    border: 2px solid #E5E7EB;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: transparent;
+    color: #E5E7EB;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.btn:active {
+    border-color: #34D399;
+    color: #34D399;
+}
+
+.hometown-scoreAdd, .away-scoreAdd {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 1rem;
+}
+
+/* Control box */
+.control-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-box > button {
+    border: none;
+    background: transparent;
+    color: #F43F5E;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.control-box > button.active {
+    color: #10B981;
+}
